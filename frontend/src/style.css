@@ -1,0 +1,221 @@
+
+
+
+.containerForm{
+    background-color: rgba(64, 77, 79, 0.35);
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+.formText{
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.auxiliarForm{
+    padding-top: 10px;
+}
+
+
+/* InBox */
+.containerInBox{
+    background-color: rgba(64, 77, 79, 0.35);
+    border-radius: 10px;
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.mensageInBox{
+    position: relative;
+    width: 90%;
+    background-color: #212529;
+    margin: auto;
+    margin-top: 10px
+}
+.textMensage{
+    color: white;
+    overflow: hidden;
+}
+.butonMensage{
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    width: 15%;
+    margin-top: 10px;
+    transform: translateX(-290%);
+    position: absolute;
+}
+
+/* Boton de Redactar */
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    width: 25%;
+    margin-top: 10px;
+}
+/* Reader */
+
+.textReader{
+    color: white;
+    overflow: hidden;
+    display: inline-block
+}
+
+.backgroundReader{
+    background-color: #212529 ;
+    height: 70vh;
+    width: 100%;   
+
+}
+.bodyReader{
+    overflow-y: scroll;
+}
+.lineReader{
+    height: 5px;
+    color: white;
+    width: 80%;
+    margin:auto
+}
+.closeReader{
+    display:inline-block;
+    margin-left: 84%;
+    margin-top: 10px;
+}
+
+/* Writer */
+.asuto{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;;
+}
+.mensaje{
+    width: 90%;
+    height: 40%;
+    margin-top: 5px;
+}
+.btn-primary-write {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    margin-top: 10%;
+    width: 90px;
+}
+
+/* Asignatura */
+
+.asignHeader{
+    
+    height: 10%;
+    width: 100%;
+    background-color: rgba(64, 77, 79, 0.35);
+    border-radius: 0 10 0 10;
+}
+.asignCreateBtn{
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 10px;
+}
+.asignText{
+
+    color: white;
+    display: inline;
+    padding: 20px;
+    margin: auto;
+    
+}
+
+.asignButton{
+    display: inline;
+    color: #fff;
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+    width: 20vh;
+    margin: 0 10px 0 0 ;
+}
+
+.asignButton:first-child{
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.asignForm{
+    background-color: rgba(64, 77, 79, 0.35);
+    border-radius: 10px;
+    width: 60%;
+    height: 40vh;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.asignClose{
+    position: relative;
+    left: 45%;
+    color: #fff;
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
+.deleteBgrd{
+    position: absolute;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    z-index: 3;
+    bottom: 50%;
+    left: 35%;
+    height: 100px;
+}
+
+.containerUser{
+    background-color: rgba(64, 77, 79, 0.35);
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    border-style: solid;
+    
+}
+
+.userText strong{
+    font-size: 24px;
+    display: inline;
+}
+.userText p{
+    font-size: 20px;
+
+}
+
+.logout-bgrnd{
+    position: relative;
+    width: 50%;
+    background-color: #212529;
+    margin: auto;
+    margin-top: 10px;
+    height: 40vh;
+    border-radius: 10px;
+    margin: 100px auto 0 auto;
+}
+
+.logout-bgrnd h1{
+    color: white;
+    padding: 100px 0 30px 0;
+}
+
+.logout-bgrnd button{
+    width: 50px;
+    background-color: rgba(64, 77, 79, 0.35);
+    color: white;
+    font-size: large;
+}

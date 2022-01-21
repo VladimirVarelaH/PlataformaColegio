@@ -1,0 +1,4 @@
+/* 
+filtoros y buscador
+input type select con los permisos como options
+*/

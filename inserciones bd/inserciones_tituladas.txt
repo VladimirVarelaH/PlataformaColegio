@@ -1,0 +1,60 @@
+cargos:
+	INSERT INTO cargos (cargo_p) VALUES ('admin');
+	INSERT INTO cargos (cargo_p) VALUES ('director');
+	INSERT INTO cargos (cargo_p) VALUES ('utp');
+	
+personas:
+	INSERT INTO personas (rut, nombres, ap_paterno, ap_materno, email, contrasenia) VALUES (30109691, 'Daniel Federico', 'Santa', 'María', 'daniel.santamaria@gmail.com', '30109691');
+	INSERT INTO personas (rut, nombres, ap_paterno, ap_materno, email, contrasenia) VALUES (30073182, 'Valdemar Alejandro', 'Caroe', 'Hernández', 'valejandro.k@gmail.com', '30073182');
+	INSERT INTO personas (rut, nombres, ap_paterno, ap_materno, email, contrasenia) VALUES (31408812, 'Aron Abel', 'Abdo', 'Abreu', 'aron.abel@gmail.com', '31408812');
+	INSERT INTO personas (rut, nombres, ap_paterno, ap_materno, email, contrasenia) VALUES (32408812, 'Carlos Elías', 'Maldonado', 'Alcocer', 'carlos.maldonado@gmail.com', '32408812');
+	INSERT INTO personas (rut, nombres, ap_paterno, ap_materno, email, contrasenia) VALUES (31511269, 'Paloma Alejandra', 'Rosas', 'Cruz', 'paloma.rosas@gmail.com', '31511269');
+	INSERT INTO personas (rut, nombres, ap_paterno, ap_materno, email, contrasenia) VALUES (10511269, 'Clara Sara', 'Mistral', 'Cremades', 'paloma.rosas@gmail.com', '10511269');
+
+directivos
+	INSERT INTO directivos (rut_directivo, id_cargo) VALUES (30109691, 1);
+	INSERT INTO directivos (rut_directivo, id_cargo) VALUES (10511269, 2);
+
+cursos:
+	INSERT INTO cursos (nombre) VALUES ('3ero Medio');
+	INSERT INTO cursos (nombre) VALUES ('4to Medio');
+	
+alumnos:
+	INSERT INTO alumnos (rut_alumno, id_curso) VALUES (31408812, 2);
+	INSERT INTO alumnos (rut_alumno, id_curso) VALUES (32408812, 2);
+	
+asignaturas:
+	INSERT INTO asignaturas (id_curso, nombre) VALUES (2, 'Lenguaje'); 
+	INSERT INTO asignaturas (id_curso, nombre) VALUES (2, 'Biologia');
+
+profesores:
+	INSERT INTO profesores (rut_profesor, id_asignatura) VALUES (30073182, 1);
+	INSERT INTO profesores (rut_profesor, id_asignatura) VALUES (31511269, 2);
+	
+profesoresJefes:
+	INSERT INTO profesoresjefes (rut_profesor_jefe, id_curso) VALUES (31511269, 2);
+
+mensajes:
+	INSERT INTO mensajes (asunto, cuerpo) VALUES ('Aviso Suspensión', 'Estimado Abel y apoderada. Le informamos que Abel ha sido suspendido del establecimiento por una semana. Atte. Dirección.');
+	INSERT INTO mensajes (asunto, cuerpo) VALUES ('Recordatorio', 'Se le recuerda al administrador que debe ingresar al resto de los alumnos a la plataforma a más tardar este lunes 9 de agosto. Atte. Dirección.');
+	
+origendestinos:
+	INSERT INTO origendestinos (rut_emisor, rut_receptor, id_mensaje, "createdAt") VALUES (10511269, 31408812, 1, '2021-08-06');
+	INSERT INTO origendestinos (rut_emisor, rut_receptor, id_mensaje, "createdAt") VALUES (10511269, 31511269, 1, '2021-08-06');
+	INSERT INTO origendestinos (rut_emisor, rut_receptor, id_mensaje, "createdAt") VALUES (10511269, 30109691, 2, '2021-08-06');
+	
+apoderados:
+	INSERT INTO apoderados (rut_apoderado, rut_alumno) VALUES (31511269, 31408812);
+	
+	
+Descripción:
+
+Se crearon dos cursos: 3ero Medio y 4to Medio. El 3ero Medio tiene dos asignaturas: Lenguaje y Biologia.
+
+Valdemar es profesor de Lenguaje para el 3ero Medio.
+Aron Abel y Carlos Elías son alumnos del 3ero Medio.
+Paloma es apoderada de Aron, es profesora de Biologia y es profesora jefe del 3ero Medio.
+Daniel es directivo y tiene el cargo de admin.
+Clara Mistral es directivo y tiene el cargo de director.
+
+Clara Mistral ha creado dos mensajes. El primero, la avisa a Aron y a su apoderada, Paloma, que ha sido suspendido del establecimiento. El segundo, es para recordarle a Daniel que debe inscribir en la aplicación a los alumnos que le faltan para el Lunes siguiente.

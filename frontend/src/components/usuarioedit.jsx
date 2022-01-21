@@ -1,0 +1,3 @@
+/* 
+formulario similar al de creacion pero con value de los valores previos
+*/
